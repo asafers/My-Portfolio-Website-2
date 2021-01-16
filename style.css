@@ -4,15 +4,24 @@
     box-sizing: border-box;
 }
 
+:root {
+    --big-font: 'Rubik, sans-serif';
+    --big-font-weigth: bold;
+    --small-font: 'Karla', sans-serif;
+    --dark-color: #511FDB;
+    --button-color: #4DD420;
+    --dark-color-analogue: #B341F5;
+}
+
 /*Font families*/
 
 h1 {
-    font-family: 'Rubik', sans-serif;
-    font-weight: bold;
+    font-family: var(--big-font);
+    font-weight: var(--big-font-weigth);
 }
 
 h2 {
-    font-family: 'Rubik', sans-serif;
+    font-family: var(--big-font);
 }
 
 h3,
@@ -20,17 +29,41 @@ h4,
 h5,
 h6,
 p {
-    font-family: 'Karla', sans-serif;
+    font-family: var(--samll-font);
+}
+
+/*buttons*/
+
+button {
+    background-color: var(--button-color);
+    border-radius: 10px;
+    transition: 0.35s ease;
+    padding: 10px;
+    border: none;
+}
+
+button:hover {
+    box-shadow: 0 6px 18px 0 rgba(#000, 0.1);
+    transform: translateY(-6px);
+  }
+
+button a {
+    text-decoration: none;
+    color: aliceblue;
 }
 
 
-/*Header nav*/
+/*Header*/
 
 #header {
     width: 100%;
     height: auto;
     margin: 0;
     padding: 2em;
+    background-image: url(./Imagenes/Backgrounds/space2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .nav-container {
@@ -44,10 +77,16 @@ p {
     flex: 1;
 }
 
+
+.logo-container h1 {
+    color: white;
+}
+
 .links-container {
     display: flex;
     justify-content: flex-end;
     flex: 3;
+    align-items: center;
 }
 
 .links-container ul {
@@ -58,6 +97,7 @@ p {
     display: inline-block;
     margin-left: 2rem;
     font-size: 1em;
+    color: white;
 }
 
 .links-container ul li a {
@@ -69,4 +109,108 @@ p {
     display: flex;
     justify-content: flex-end;
     flex: 1;
+    align-items: center;
+}
+
+.below-nav {
+    width: 88%;
+    margin: 150px auto 0;
+    display: flex;
+}
+
+.left-below-nav {
+    width: 50%;
+    height: auto;
+}
+
+.left-below-nav h2 {
+    font-family: var(--big-font);
+    color: white;
+    font-size: 2rem;
+    font-weight: var(--big-font-weigth);
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.left-below-nav span {
+    font-family: var(--big-font);
+    color: var(--dark-color-analogue);
+    font-size: 3rem;
+    font-weight: var(--big-font-weigth);
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+
+.left-below-nav p {
+    color: white;
+    font-size: 2rem;
+    font-family: var(--big-font);
+}
+
+.left-below-nav button {
+    margin: 20px 0;
+}
+
+.right-below-nav {
+    width: 50%;
+    height: auto;
+}
+
+.right-below-nav img {
+    max-width: 100%;
+    height: auto;
+    animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-20px)
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+
+}
+
+/*Skills*/
+
+#skills-section {
+    width: 100%;
+    height: auto;
+    padding: 2em;
+    margin: 0;
+    padding: 2rem 0;
+    background-image: url(./Imagenes/Backgrounds/white.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.skills-header {
+    width: 88%;
+    height: auto;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+    width: 88%;
+    height: auto;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 4px 4px 4px gray;
+    text-align: center;
+    padding: 1.5rem;
+    flex: 1;
+    margin: 1.5rem;
+
 }
