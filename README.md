@@ -20,3 +20,4 @@ This is my portfolio website entirely coded by me. It is made by the combination
 
 -15/01 Initial HTML 
 -16/01 Header, skill layout and inital style
+-18/01 FAQ and skills layout. FAQ JS not working
