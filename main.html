@@ -6,6 +6,7 @@
     <script src="script.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Karla&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
     <title>Adrian's Designer Web Page</title>
 </head>
@@ -82,7 +83,7 @@
         </div>
     </main>
     <!--Contact-->
-    <section id="Contact">
+    <section id="contact">
         <div class="contact-container">
             <!--left-->
             <div class="forms-container">
@@ -91,7 +92,7 @@
                     <input type="text" placeholder="Name">
                     <input type="text" placeholder="Email">
                     <textarea type="text" placeholder="Enter your project"></textarea>
-                    <input type="submit" value="Send request">
+                    <input type="submit" value="Send request" class="button">
                 </form>
             </div>
             <!--right-->
@@ -104,10 +105,27 @@
     <!--FAQ-->
     <section id="faq">
         <div class="faq-container">
-            <div>
-                <h2></h2>
+            <!--Left-->
+            <div class="faq-intro-container">
+                <p>Frequently asked questions</p>
+                <h2><span>Need help?</span>Let us put your mind at ease</h2>
+                <a href="#contact">Your answer isn't here? Contact us!</a>
             </div>
-            <div>
+            <!--Right-->
+            <div class="faq-questions-container">
+                <div class="accordion" aria-expanded="false" role="button">
+                    <h3 class="faq-question"><!--Plus sign is here (h3::before) -->
+                        <i class="fas fa-info-circle"></i>
+                        Lorem Ipsum is simply dummy text of the printing?
+                    </h3>
+                    <p class="faq-answer">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                </div>
+                <div class="accordion" aria-expanded="false" role="button"></div>
+                <div class="accordion" aria-expanded="false" role="button"></div>
+                <div class="accordion" aria-expanded="false" role="button"></div>
 
             </div>
         </div>
@@ -129,6 +147,7 @@
             </div>
         </div>
     </section>
+    <button type="button" onclick="hola()">Click Me!</button>
     <!--Footer-->
     <footer id="footer">
         <div class="footer-container">
@@ -137,6 +156,5 @@
             <p></p>
         </div>
     </footer>
-
 </body>
 </html>

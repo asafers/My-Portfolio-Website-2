@@ -34,6 +34,7 @@ p {
 
 /*buttons*/
 
+.button,
 button {
     background-color: var(--button-color);
     border-radius: 10px;
@@ -42,11 +43,15 @@ button {
     border: none;
 }
 
+
+.button,
 button:hover {
     box-shadow: 0 6px 18px 0 rgba(#000, 0.1);
     transform: translateY(-6px);
-  }
+}
 
+
+.button,
 button a {
     text-decoration: none;
     color: aliceblue;
@@ -213,4 +218,128 @@ button a {
     flex: 1;
     margin: 1.5rem;
 
+}
+
+/*Contact*/
+
+#contact {
+    width: 100%;
+    height: auto;
+    padding: 2em;
+    margin: 0;
+    padding: 2rem 0;
+    background-image: url(./Imagenes/Backgrounds/photo-1524169358666-79f22534bc6e.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-container {
+    display: flex;
+    width: 88%;
+    margin: 0 auto;
+    align-content: flex-start;
+}
+
+.forms-container {
+    width: 50%;
+}
+
+form {
+    width: 60%;
+}
+
+form input {
+    padding: 0.5rem;
+    width: 90%;
+    border-radius: 0.5rem;
+    font-family: var(--small-font);
+    margin: 0.5rem 0;
+}
+
+form textarea {
+    padding: 0.5rem;
+    height: 150px;
+    border-radius: 0.5rem;
+    font-family: var(--small-font);
+    width: 90%;
+    margin: 1rem 0;
+}
+
+/*FAQ*/
+
+#faq {
+    width: 100%;
+    background-color: white;
+    margin: 0;
+    padding: 1rem;
+}
+
+.faq-container {
+    display: flex;
+    width: 88%;
+    margin: 0 auto;
+}
+
+.faq-intro-container {
+    width: 40%;
+    margin: 0;
+    justify-content: center;
+}
+
+.faq-questions-container {
+    width: 50%;
+    margin: 0;
+    justify-content: center;
+    height: auto;
+}
+
+.fa-info-circle {
+    margin-right: 0.5rem;
+    color: purple;
+}
+
+/*Accordion on false*/
+
+.accordion[aria-expanded="false"] {
+    padding: 0.3rem;
+    background-color: white;
+    box-shadow: 4px 4px 4px gray;
+    margin: 0.5rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+.accordion[aria-expanded="false"] h3 {
+    color: black;
+    text-align: center;
+    position: relative;
+}
+
+
+
+.accordion[aria-expanded="false"] h3::before {
+    content: '+';
+    right: 0;
+    text-align: center;
+    position: absolute;
+}
+
+.accordion[aria-expanded="false"] .faq-answer {
+    opacity: 0;
+    overflow: hidden;
+}
+
+/*Accordion on true*/
+
+.accordion[aria-expanded="true"] {
+    padding: 0.3rem;
+    background-color: white;
+    box-shadow: 4px 4px 4px gray;
+    margin: 0.5rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+.accordion[aria-expanded="true"] .faq-answer {
+    opacity: 1;
 }

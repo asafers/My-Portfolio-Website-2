@@ -77,5 +77,21 @@ const greetings = () => {
 
 window.setInterval(greetings, 400);
 
-// document.getElementById("demo").innerHTML = "Hello JavaScript!";
+/*Accordion*/
 
+let accordions = document.querySelectorAll('.accordion');
+
+let showAnswer = () => {
+
+    let ariaAttribute = this.getAttribute('aria-expanded');
+
+    for (let i = 0; i < accordions.length; i++) {
+        accordions[i].setAttribute('aria-expanded', 'false');
+    }
+
+    if (ariaAttribute === 'false') {
+        this.setAttribute('aria-expanded', 'true');
+    }
+}
+
+accordions.forEach(accordion => accordion.onclick = showAnswer);
