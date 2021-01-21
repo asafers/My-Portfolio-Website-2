@@ -46,8 +46,8 @@ button {
 
 .button,
 button:hover {
-    box-shadow: 0 6px 18px 0 rgba(#000, 0.1);
-    transform: translateY(-6px);
+    background-color: green;
+    
 }
 
 
@@ -65,7 +65,7 @@ button a {
     height: auto;
     margin: 0;
     padding: 2em;
-    background-image: url(./Imagenes/Backgrounds/space2.jpg);
+    background-image: url(./Imagenes/Neon/ultraviolet-wallpaper.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -190,7 +190,7 @@ button a {
     padding: 2em;
     margin: 0;
     padding: 2rem 0;
-    background-image: url(./Imagenes/Backgrounds/white.jpg);
+    background-color: #dad8d8;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -217,7 +217,40 @@ button a {
     padding: 1.5rem;
     flex: 1;
     margin: 1.5rem;
+    opacity: 0;
+    position: relative;
+}
 
+.first-card {
+    animation: fade-in 0.4s ease-in-out 0s forwards;
+}
+
+.second-card {
+    animation: fade-in 0.4s ease-in-out 0.2s forwards;
+}
+
+.third-card {
+    animation: fade-in 0.4s ease-in-out 0.4s forwards;
+}
+
+.fourth-card {
+    animation: fade-in 0.4s ease-in-out 0.6s forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        right: 1.5rem;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        right: 0;
+        opacity: 1;
+    }
 }
 
 /*Contact*/
@@ -228,9 +261,10 @@ button a {
     padding: 2em;
     margin: 0;
     padding: 2rem 0;
-    background-image: url(./Imagenes/Backgrounds/photo-1524169358666-79f22534bc6e.jpg);
+    background-image: url(./Imagenes/Backgrounds/space2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .contact-container {
@@ -265,11 +299,28 @@ form textarea {
     margin: 1rem 0;
 }
 
+.contact-right-container {
+    width: 50%;
+}
+
+.contact-right-container figure {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.contact-right-container img {
+    max-width: 60%;
+    height: auto;
+}
+
 /*FAQ*/
 
 #faq {
     width: 100%;
-    background-color: white;
+    background-color:#dad8d8;
     margin: 0;
     padding: 1rem;
 }
@@ -300,7 +351,7 @@ form textarea {
 
 /*Accordion on false*/
 
-.accordion[aria-expanded="false"] {
+.accordion[aria-expanded*="false"] {
     padding: 0.3rem;
     background-color: white;
     box-shadow: 4px 4px 4px gray;
@@ -309,7 +360,7 @@ form textarea {
     cursor: pointer;
 }
 
-.accordion[aria-expanded="false"] h3 {
+.accordion[aria-expanded*="false"] h3 {
     color: black;
     text-align: center;
     position: relative;
@@ -342,4 +393,78 @@ form textarea {
 
 .accordion[aria-expanded="true"] .faq-answer {
     opacity: 1;
+}
+
+/*Call to action*/
+
+#call-to-action {
+    width: 100%;
+    height: auto;
+    background-image: url(./Imagenes/Backgrounds/dark\ space\ bottom.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1rem 0;
+}
+
+.call-container {
+    margin: 0 auto;
+    display: flex;
+    width: 88%;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.call-left-container,
+.call-right-container {
+    flex: 1;
+
+}
+
+.call-left-container figure img,
+.call-right-container figure img {
+    width: 100%;
+    height: auto;
+}
+
+.call-center-container {
+    flex: 2;
+    text-align: center;
+}
+
+/*Footer*/
+
+#footer {
+    width: 100%;
+    padding: 1rem 0;
+    height: auto;
+    background-image: url(./Imagenes/Backgrounds/dark\ space\ bottom.jpg);
+}
+
+.footer-container {
+    display: flex;
+    margin: 0 auto;
+    width: 88%;
+    border-top: 1px solid white;
+    padding: 1rem 0;
+}
+
+.footer-copyright {
+    flex: 1;
+}
+
+.footer-info {
+    text-align: right;
+    flex: 1;
+}
+
+.footer-info ul {
+    list-style: none;
+}
+
+.footer-info ul li {
+    display: inline-block;
+    margin-left: 2rem;
+    font-size: 1em;
+    color: white;
 }

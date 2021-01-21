@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
@@ -97,8 +97,7 @@
             </div>
             <!--right-->
             <div class="contact-right-container">
-                <figure><img></figure>
-                <figcaption></figcaption>
+                <figure><img src="./Imagenes/Others/spaceship.png" alt="Bottom text"></figure>
             </div>
         </div>
     </section>
@@ -134,26 +133,35 @@
     <section id="call-to-action">
         <div class="call-container">
             <!--right-->
-            <div>
-                <figure><img></figure>
+            <div class="call-right-container">
+                <figure>
+                    <img src="Imagenes/Others/spacer 5.png">
+                </figure>
             </div>
             <!--center-->
-            <div>
-                <h2></h2><p></p><button></button>
+            <div class="call-center-container">
+                <h3>Time to get that web</h3>
+                <h2>On point</h2>
+                <button>Start now!</button>
             </div>
             <!--left-->
-            <div>
-                <figure><img></figure>
+            <div class="call-left-container">
+                <figure>
+                    <img src="Imagenes/Others/spacer.png">
+                </figure>
             </div>
         </div>
     </section>
-    <button type="button" onclick="hola()">Click Me!</button>
     <!--Footer-->
     <footer id="footer">
         <div class="footer-container">
-            <p></p>
-            <p></p>
-            <p></p>
+            <p class="footer-copyright">Copyright</p>
+            <div class="footer-info">
+                <ul>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
