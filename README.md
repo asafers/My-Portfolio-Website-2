@@ -21,4 +21,5 @@ This is my portfolio website entirely coded by me. It is made by the combination
 -15/01 Initial HTML 
 -16/01 Header, skill layout and inital style
 -18/01 FAQ and skills layout. FAQ JS not working
--23/01 Many styles provided. Animations fixed. Need to work on the skills section and fine tune the font.
+-23/01 Each section styles refined. Animations fixed. Need to work on the skills section and fine tune the font.
+-24/01 Skill section done. Modified font.

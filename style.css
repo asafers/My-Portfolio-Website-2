@@ -5,9 +5,7 @@
 }
 
 :root {
-    --big-font: 'Rubik, sans-serif';
     --big-font-weigth: bold;
-    --small-font: 'Karla', sans-serif;
     --dark-color: #5b34c7;
     --button-color: #38c907;
     --button2-color: #3652ce;
@@ -18,17 +16,20 @@
 a {
     text-decoration: none;
     color: white;
+    letter-spacing: 0.1rem;
 }
 
 /*Font families*/
 
 h1 {
-    font-family: var(--big-font);
+    font-family: 'Roboto', sans-serif;
     font-weight: var(--big-font-weigth);
+    letter-spacing: 0.1rem;
 }
 
 h2 {
-    font-family: var(--big-font);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.06rem;
 }
 
 h3,
@@ -36,7 +37,7 @@ h4,
 h5,
 h6,
 p {
-    font-family: var(--small-font);
+    font-family: 'Rubik', sans-serif;
 }
 
 /*buttons*/
@@ -160,7 +161,7 @@ p {
 }
 
 .left-below-nav h2 {
-    font-family: var(--big-font);
+    font-family:'Roboto', sans-serif;
     color: white;
     font-size: 2rem;
     font-weight: var(--big-font-weigth);
@@ -170,7 +171,7 @@ p {
 }
 
 .left-below-nav span {
-    font-family: var(--big-font);
+    font-family: 'Roboto', sans-serif;
     color: var(--text-contrast-color);
     font-size: 3rem;
     font-weight: var(--big-font-weigth);
@@ -181,7 +182,7 @@ p {
     color: white;
     margin-top: 0.2rem;
     font-size: 2rem;
-    font-family: var(--big-font);
+    font-family: 'Roboto', sans-serif;
 }
 
 .left-below-nav button {
@@ -376,7 +377,7 @@ form input {
     padding: 0.5rem;
     width: 90%;
     border-radius: 0.5rem;
-    font-family: var(--small-font);
+    font-family: 'Rubik', sans-serif;
     margin: 0.5rem 0;
 }
 
@@ -384,7 +385,7 @@ form textarea {
     padding: 0.5rem;
     height: 150px;
     border-radius: 0.5rem;
-    font-family: var(--small-font);
+    font-family: 'Rubik', sans-serif;
     width: 90%;
     margin: 1rem 0;
 }
