@@ -266,6 +266,8 @@ p {
     margin: auto;
 }
 
+
+
 .card {
     background-color: white;
     box-shadow: 4px 4px 4px gray;
@@ -295,6 +297,8 @@ p {
     color: var(--text-contrast-color);
     text-transform: uppercase;
     font-size: 2rem;
+    width: 240px;
+    margin: 0 auto;
 }
 
 .card p {
@@ -307,6 +311,7 @@ p {
 
 .first-card {
     animation: fade-in 0.4s ease-in-out 0s forwards;
+    
 }
 
 .second-card {
@@ -334,6 +339,12 @@ p {
     100% {
         right: 0;
         opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .cards-container {
+        flex-direction: column;
     }
 }
 
